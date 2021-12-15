@@ -3,7 +3,7 @@ default: help
 help:
 	@echo "see README.md"
 
-DATAFILE=data-$(shell hostname -s).txt
+DATAFILE=results.txt
 
 benchmark: benchmark.c pretty.c
 	gcc -O2 -Wall -o $@ $^
